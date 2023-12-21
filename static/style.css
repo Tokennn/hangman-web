@@ -9,22 +9,45 @@
 .container
 {
     display: flex;
-    height: 100vh;
+    width: 100%;
+    /* animation: color 12s ease-in-out infinite; */
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* float: center; */
+    text-align: center;
+}
+
+body
+{
     width: 100%;
     background: linear-gradient(45deg, #7700ff, #c20202, #00af69, #FFDC00);
     background-size: 300% 300%;
     background-color: #7700ff;
     animation: color 12s ease-in-out infinite;
     margin: 0;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: #000;
     float: center;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.buttoncontainerinside
+{
+    display: inline-block;
+    justify-content: center;
+}
+
+.buttoncontainerhome
+{
+    display: inline-block;
 }
 
 a {
-    position: relative;
+    text-align: center;
     display: inline-block;
     padding: 25px 30px;
     text-transform: uppercase;
@@ -139,10 +162,37 @@ a span:nth-child(4) {
         bottom: 100%;
     }
 }
-.footer {
-    position: absolute;
-    bottom: 0;
+
+
+
+
+
+.container { display: inline-block; }
+
+.text {
+    color: #fff;
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 15px solid;
     width: 100%;
-    color: rgb(176, 0, 152);
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2ms,
+        cursor .4s step-end infinite alternate;
     text-align: center;
 }
+
+/* cursor blinking */
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+/* tapping effect */
+
+@keyframes typing {
+    from { width: 0 }
+}
+
