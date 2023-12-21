@@ -164,9 +164,6 @@ a span:nth-child(4) {
 }
 
 
-
-
-
 .container { display: inline-block; }
 
 .text {
@@ -174,18 +171,19 @@ a span:nth-child(4) {
     font-size: 5em;
     letter-spacing: 10px;
     font-family: monospace;
-    border-right: 15px solid;
+    border-left: 8px solid;
+    border-right: 8px solid;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation:
         typing 2ms,
-        cursor .4s step-end infinite alternate;
+        cursor .5s step-end infinite alternate;
     text-align: center;
 }
 
 /* cursor blinking */
-
+ 
 @keyframes cursor {
     50% { border-color: transparent; }
 }
