@@ -6,8 +6,8 @@
     </head>
     <body>
         <nav class="container">
+            
             <p class="text">Hangman</p>
-
             <div class="buttoncontainerinside">
             <a href="/">
                 <span></span>
@@ -26,7 +26,13 @@
             </div>
         </nav>
         <div class="game-container">
-
+            <b>
+                {{.Display}}
+            </b>
+            <p>
+                <label for="letter">Letter :</label>
+                <input type="text" id="letter" name="letter" class="input-moderne">
+            </p>
         </div>
     </body>
 </html>

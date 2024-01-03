@@ -38,8 +38,8 @@ body
 .buttoncontainerinside
 {
     display: inline-block;
-    margin-top: 170px;
-    margin-left: 50px;
+    margin-top: 450px;
+    margin-left: 80px;
 }
 
 .buttoncontainerhome
@@ -52,7 +52,7 @@ body
 .buttoncontainerexit
 {
     display: inline-block;
-    margin-top: 260px;
+    margin-top: 315px;
     margin-left: 65px;
 }
 
@@ -211,12 +211,14 @@ a span:nth-child(4) {
     overflow: hidden;
 }
 
-/* .blocvideo {
-   position: absolute;
-   min-width: 100%;
-   min-height: 100%;
-   top: 50%;
-   left: 50%;
-   z-index: -100;
-   transform: translate(-50%, -50%);
-} */
+
+b {
+
+    color: #000000;
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 42%;
+    font-size: 70px;
+}
+
+
