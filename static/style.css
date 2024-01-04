@@ -6,6 +6,8 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+
+/* --> For background animation */
 .container
 {
     display: flex;
@@ -18,7 +20,7 @@
     /* float: center; */
     text-align: center;
 }
-
+/* ** */
 body
 {
     width: 100%;
@@ -34,7 +36,8 @@ body
     /* display: flex; */
     flex-direction: column;
 }
-
+ 
+/* --> For button MENU and EXIT */
 .buttoncontainerinside
 {
     display: inline-block;
@@ -42,6 +45,7 @@ body
     margin-left: 80px;
 }
 
+/* --> For button SINGLEPLAYER */
 .buttoncontainerhome
 {
     display: inline-block;
@@ -49,6 +53,7 @@ body
     margin-left: 65px;
 }
 
+/* --> For button PLEASE BACK TO THE GAME */
 .buttoncontainerexit
 {
     display: inline-block;
@@ -56,19 +61,8 @@ body
     margin-left: 65px;
 }
 
-a {
-    text-align: center;
-    display: inline-block;
-    padding: 25px 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #03e9f4;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: .5s;
-    overflow: hidden;
-    margin-right: 70px;
-}   
+
+/* --> For all buttons animations */
 a:hover {
     background-color: #03e9f4;
     color: #050801;
@@ -211,9 +205,23 @@ a span:nth-child(4) {
     overflow: hidden;
 }
 
+/* --> For buttons */
+a {
+    text-align: center;
+    display: inline-block;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #03e9f4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    margin-right: 70px;
+}
 
+/* --> For the Hangman Word */
 b {
-
     color: #000000;
     position: absolute;
     margin-top: -30%;
@@ -221,4 +229,41 @@ b {
     font-size: 70px;
 }
 
+/* --> For the button RESTART */
+.buttonrestart
+{
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 640px;
+}
 
+input{
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 380px;
+    /* width: 100px;
+    height: 50px; */
+    background-color: #03e9f4;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button{
+    position: absolute;
+    margin-top: -380px;
+    margin-left: 515px;
+    /* width: 100px;
+    height: 50px; */
+    background-color: #03e9f4;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}

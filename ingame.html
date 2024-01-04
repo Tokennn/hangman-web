@@ -29,10 +29,9 @@
             <b>
                 {{.Display}}
             </b>
-            <p>
-                <label for="letter">Letter :</label>
-                <input type="text" id="letter" name="letter" class="input-moderne">
-            </p>
-        </div>
+            <form action="/ingame" method="post">
+                <input type="text" name="letter" maxlength="11" placeholder="Letter">
+                <button type="submit">Send</button>
+            </form>
     </body>
 </html>
