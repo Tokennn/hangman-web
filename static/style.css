@@ -224,8 +224,18 @@ a {
 b {
     color: #000000;
     position: absolute;
-    margin-top: -30%;
+    margin-top: -25%;
     margin-left: 42%;
+    font-size: 70px;
+}
+
+/* --> For the button NUMBER O LIFE */
+b1 {
+    font-weight: bold;  
+    color: #bd0101;
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 65%;
     font-size: 70px;
 }
 
@@ -241,7 +251,7 @@ b {
 input
 {
     position: absolute;
-    margin-top: -380px;
+    margin-top: -315px;
     margin-left: 380px;
     /* width: 100px;
     height: 50px; */
@@ -258,7 +268,7 @@ input
 button
 {
     position: absolute;
-    margin-top: -380px;
+    margin-top: -314px;
     margin-left: 515px;
     /* width: 100px;
     height: 50px; */
