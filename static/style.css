@@ -237,7 +237,9 @@ b {
     margin-left: 640px;
 }
 
-input{
+/* --> For the INPUT */
+input
+{
     position: absolute;
     margin-top: -380px;
     margin-left: 380px;
@@ -252,7 +254,9 @@ input{
     cursor: pointer;
     transition: 0.5s;
 }
-button{
+/* --> For the button SEND */
+button
+{
     position: absolute;
     margin-top: -380px;
     margin-left: 515px;

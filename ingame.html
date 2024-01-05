@@ -28,9 +28,10 @@
         <div class="game-container">
             <b>
                 {{.Display}}
+                {{.Life}}
             </b>
-            <form action="/ingame" method="post">
-                <input type="text" name="letter" maxlength="11" placeholder="Letter">
+            <form action="/putletter" method="post">
+                <input type="text" name="letter" maxlength="10" placeholder="Letter">
                 <button type="submit">Send</button>
             </form>
     </body>
