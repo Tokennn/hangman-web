@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <rope>
         <title>Game</title>
         <link rel="stylesheet" type="text/css" href="/static/style.css">
-    </head>
-    <body>
+    </rope>
+    <head>
         <nav class="container">
             
             <p class="text">Hangman</p>
@@ -37,18 +37,124 @@
                 <button type="submit">Send</button>
             </form>
         </div>
-        <div class="hangman">
+        {{define "hangmandisplay"}}
+            {{if eq .Life 10}}
+        <div class="hang">
+            <!-- Étapes du pendu ici pour la vie 10 -->
+            <div class="diplayallhang"></div>
+        </div>
+            {{else if eq .Life 9}}
+        <div class="hang">
+            <div class="diplayallhang"></div>
+            <div class="ground"></div>
+        </div>
+            {{else if eq .Life 8}}
+        <div class="hang">
+            <div class="diplayallhang"></div>
+            <div class="ground"></div>
+            <div class="barverti"></div>
+        </div>
+            {{else if eq .Life 7}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+    </div>
+            {{else if eq .Life 6}}
+    <div class="hangman-container">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+    </div>
+            {{else if eq .Life 5}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+        <div class="head"></div>
+    </div>
+
+            {{else if eq .Life 4}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+    </div>
+            {{else if eq .Life 3}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="left-arm"></div>
+    </div>
+
+            {{else if eq .Life 2}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+    </div>
+
+            {{else if eq .Life 1}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+        <div class="left-leg"></div>
+    </div>
+
+            {{else if eq .Life 0}}
+    <div class="hang">
+        <div class="diplayallhang"></div>
+        <div class="ground"></div>
+        <div class="barverti"></div>
+        <div class="top"></div>
+        <div class="rope"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+        <div class="left-leg"></div>
+        <div class="right-leg"></div>
+    </div>
+    {{end}}
+        <!-- <div class="hangman">
+            <div class="hangman-part rope"></div>
             <div class="hangman-part head"></div>
-            <div class="hangman-part body"></div>
-            <div class="hangman-part left-arm"></div>
+            <div class="hangman-part left-body"></div>
+            <div class="hangman-part right-body"></div>
             <div class="hangman-part right-arm"></div>
             <div class="hangman-part left-leg"></div>
-            <div class="hangman-part right-leg"></div>
         <div class="guillo">
+            <div class="diplayallhang"></div>
             <div class="ground"></div>
             <div class="barverti"></div>
             <div class="top"></div>
-            <div class="rope"></div>
-        </div>
-    </body>
+        </div> -->
+    </head>
 </html>

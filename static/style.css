@@ -232,7 +232,7 @@ b {
 /* --> For the button NUMBER O LIFE */
 b1 {
     font-weight: bold;  
-    color: #bd0101;
+    color: #ffffff;
     position: absolute;
     margin-top: -25%;
     margin-left: 65%;
@@ -296,7 +296,7 @@ button
 .hangman-part {
     position: absolute;
     background-color: #333;
-    display: none;
+    /* display: none; */
 }
 
 .head {
@@ -306,7 +306,7 @@ button
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-color: #f0c419;
+    background-color: #000000;
     margin-top: 15px;
 }
 
@@ -316,7 +316,7 @@ button
     margin-left: -10px;
     height: 80px;
     width: 20px;
-    background-color: #f0c419; 
+    background-color: #000000; 
 }
 
 .left-arm {
@@ -325,7 +325,7 @@ button
     margin-left: -40px;
     height: 10px;
     width: 40px;
-    background-color: #1d19f0; 
+    background-color: #000000; 
     transform-origin: 100% 50%; /* Pour faire pivoter le bras depuis le coin inférieur droit */
     transform: rotate(30deg);
     margin-top: 10px;
@@ -337,7 +337,7 @@ button
     margin-left: 0;
     height: 10px;
     width: 40px;
-    background-color: #1d19f0;
+    background-color: #000000;
     transform-origin: 0% 50%; /* Pour faire pivoter le bras depuis le coin inférieur gauche */
     transform: rotate(-30deg);
     margin-top: 10px;
@@ -349,7 +349,7 @@ button
     margin-left: -12px;
     height: 60px;
     width: 8px;
-    background-color: #8119f0; 
+    background-color: #000000; 
     transform-origin: 50% 0%; /* Pour faire pivoter la jambe depuis le haut du bas */
     transform: rotate(30deg);
 }
@@ -360,18 +360,18 @@ button
     margin-left: 5px;
     height: 60px;
     width: 8px;
-    background-color: #8119f0; 
+    background-color: #000000; 
     transform-origin: 50% 0%; /* Pour faire pivoter la jambe depuis le haut du bas */
     transform: rotate(-30deg);
 }
 
-.guillo {
+/* .guillo {
     position: relative;
     width: 200px;
     height: 300px;
     margin-left: 1150px;
     margin-top: -410px;
-}
+} */
 
 
 .ground {
@@ -417,4 +417,8 @@ button
     background-color: #000000;
     margin-bottom: 280px;
     margin-left: 95px;
+}
+
+.diplayallhang {
+    display: none;
 }
