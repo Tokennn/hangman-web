@@ -67,13 +67,7 @@ func Exit(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 func Restart(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	data.Word = hangman.Randomly()
 	data.Display = hangman.Displaywords(data.Word)
-	Inside(w, r, data)
-	template, err := template.ParseFiles("./ingame.html")
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	template.Execute(w, data)
+	data.Life = 10
 }
 
 func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
