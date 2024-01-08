@@ -53,13 +53,14 @@ body
     margin-left: 65px;
 }
 
-/* --> For button PLEASE BACK TO THE GAME */
+/* --> For button RESTART */
 .buttoncontainerexit
 {
     display: inline-block;
     margin-top: 315px;
     margin-left: 65px;
 }
+
 
 
 /* --> For all buttons animations */
@@ -170,11 +171,23 @@ a span:nth-child(4) {
 
 .container { display: inline-block; }
 
+/* ------------------------------------ */
+
+
+@font-face {
+    font-family: 'graffiti_youthregular';
+    src: url('font/graffitiyouth-regular-webfont.woff2') format('woff2'),
+         url('font/graffitiyouth-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .text {
     color: #fff;
     font-size: 5em;
     letter-spacing: 10px;
-    font-family: monospace;
+    font-family: 'graffiti_youthregular', Arial, sans-serif;
     border-left: 8px solid;
     border-right: 8px solid;
     width: 100%;
@@ -185,6 +198,7 @@ a span:nth-child(4) {
         cursor .5s step-end infinite alternate;
     text-align: center;
 }
+
 
 /* cursor blinking */
  
@@ -197,6 +211,9 @@ a span:nth-child(4) {
 @keyframes typing {
     from { width: 0 }
 }
+
+
+/* ---------------------------------- */
 
 .bloc {
     position: relative;
@@ -415,9 +432,9 @@ button
     bottom: 0;
     left: 0;
     width: 10px;
-    height: 100px;
+    height: 110px;
     background-color: #000000;
-    margin-bottom: 520px;
+    margin-bottom: 510px;
     margin-left: 1095px;
 }
 

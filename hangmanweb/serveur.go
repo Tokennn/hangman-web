@@ -68,6 +68,8 @@ func Restart(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	data.Word = hangman.Randomly()
 	data.Display = hangman.Displaywords(data.Word)
 	data.Life = 10
+
+	http.Redirect(w, r, "ingame", http.StatusSeeOther)
 }
 
 func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
