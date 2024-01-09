@@ -95,7 +95,7 @@ func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 
 	if len(data.Letters) > 1 {
 		if data.Letters == data.Word {
-			http.Redirect(w, r, "/endpage", http.StatusSeeOther)
+			http.Redirect(w, r, "/win", http.StatusSeeOther)
 			return
 		} else {
 			data.Life -= 2
@@ -141,6 +141,7 @@ func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	if data.Display == data.Word {
 		http.Redirect(w, r, "/win", http.StatusSeeOther)
 		return
+	} else {
+		http.Redirect(w, r, "/ingame", http.StatusSeeOther)
 	}
-	http.Redirect(w, r, "/ingame", http.StatusSeeOther)
 }

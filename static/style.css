@@ -7,11 +7,6 @@
     font-family: sans-serif;
 }
 
-@font-face {
-    font-family: 'Rubikdoodleshadow';
-    src: url('font/Rubikdoodleshadow.woff2') format('woff2');
-}
-
 /* --> For background animation */
 .container  
 {
@@ -62,7 +57,7 @@ body
 .buttoncontainerhome2winpage
 {
     display: absolute;
-    margin-top: 170px;
+    margin-top: 140px;
     margin-left: 65px;
 }
 
@@ -71,7 +66,7 @@ body
 .buttoncontainerwin
 {
     display: absolute;
-    margin-top: 270px;
+    margin-top: 320px;
     margin-left: 65px;
 }
 
@@ -199,7 +194,7 @@ a span:nth-child(4) {
     color: #fcd451;
     font-size: 5em;
     letter-spacing: 12px;
-    font-family: 'Rubikdoodleshadow' sans-serif;
+    font-family: 'PressStart2PRegular';
     border-left: 8px solid;
     border-right: 8px solid;
     width: 100%;
@@ -357,7 +352,7 @@ button
     height: 10px;
     width: 40px;
     background-color: #000000; 
-    transform-origin: 100% 50%; /* Pour faire pivoter le bras depuis le coin inférieur droit */
+    transform-origin: 100% 50%; 
     transform: rotate(30deg);
     margin-top: -65px;
 }
@@ -369,7 +364,7 @@ button
     height: 10px;
     width: 40px;
     background-color: #000000;
-    transform-origin: 0% 50%; /* Pour faire pivoter le bras depuis le coin inférieur gauche */
+    transform-origin: 0% 50%; 
     transform: rotate(-30deg);
     margin-top: -10px;
 }
@@ -381,7 +376,7 @@ button
     height: 60px;
     width: 8px;
     background-color: #000000; 
-    transform-origin: 50% 0%; /* Pour faire pivoter la jambe depuis le haut du bas */
+    transform-origin: 50% 0%; 
     transform: rotate(30deg);
     margin-top: 45px;
 }
@@ -393,7 +388,7 @@ button
     height: 60px;
     width: 8px;
     background-color: #000000; 
-    transform-origin: 50% 0%; /* Pour faire pivoter la jambe depuis le haut du bas */
+    transform-origin: 50% 0%; 
     transform: rotate(-30deg);
     margin-top: -60px;
 }
@@ -472,7 +467,7 @@ img
 {   
     width: 80px;
     position: absolute;
-    margin-top: -400px;
+    margin-top: -370px;
     margin-left: -65px;
 }
 
@@ -489,4 +484,39 @@ img
     margin-top: 320px;
     margin-left: -318px;
     rotate: 180deg;
+}
+
+.logo
+{   
+    position: relative;
+    margin-top: -40px;
+    margin-left: 590px;
+    width: 18%;
+}
+
+.logo2
+{   
+    position: relative;
+    margin-top: -40px;
+    margin-left: 590px;
+    width: 18%;
+    margin-bottom: -80px;
+}
+
+.logo3
+{   
+    position: relative;
+    margin-top: -40px;
+    margin-left: 580px;
+    width: 18%;
+    margin-bottom: -150px;
+}
+
+.logo4
+{   
+    position: relative;
+    margin-top: -40px;
+    margin-left: 580px;
+    width: 18%;
+    margin-bottom: -220px;
 }
