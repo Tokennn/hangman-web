@@ -7,8 +7,13 @@
     font-family: sans-serif;
 }
 
+@font-face {
+    font-family: 'Rubikdoodleshadow';
+    src: url('font/Rubikdoodleshadow.woff2') format('woff2');
+}
+
 /* --> For background animation */
-.container
+.container  
 {
     display: flex;
     width: 100%;
@@ -24,7 +29,7 @@
 body
 {
     width: 100%;
-    background: linear-gradient(45deg, #7700ff, #c20202, #00af69, #FFDC00);
+    background: linear-gradient(45deg, #7700ff, #c20202, #7700ff);
     background-size: 300% 300%;
     background-color: #7700ff;
     animation: color 12s ease-in-out infinite;
@@ -53,6 +58,23 @@ body
     margin-left: 65px;
 }
 
+/* --> For button HOME in winpage */
+.buttoncontainerhome2winpage
+{
+    display: absolute;
+    margin-top: 170px;
+    margin-left: 65px;
+}
+
+/* --> For button YOU WIN ! */
+
+.buttoncontainerwin
+{
+    display: absolute;
+    margin-top: 270px;
+    margin-left: 65px;
+}
+
 /* --> For button RESTART */
 .buttoncontainerexit
 {
@@ -60,7 +82,6 @@ body
     margin-top: 315px;
     margin-left: 65px;
 }
-
 
 
 /* --> For all buttons animations */
@@ -174,27 +195,18 @@ a span:nth-child(4) {
 /* ------------------------------------ */
 
 
-@font-face {
-    font-family: 'graffiti_youthregular';
-    src: url('font/graffitiyouth-regular-webfont.woff2') format('woff2'),
-         url('font/graffitiyouth-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 .text {
-    color: #fff;
+    color: #fcd451;
     font-size: 5em;
-    letter-spacing: 10px;
-    font-family: 'graffiti_youthregular', Arial, sans-serif;
+    letter-spacing: 12px;
+    font-family: 'Rubikdoodleshadow' sans-serif;
     border-left: 8px solid;
     border-right: 8px solid;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation:
-        typing 2ms,
+        typing 2ms steps(40, end),
         cursor .5s step-end infinite alternate;
     text-align: center;
 }
@@ -210,7 +222,9 @@ a span:nth-child(4) {
 
 @keyframes typing {
     from { width: 0 }
+    50% { width: 100% }
 }
+
 
 
 /* ---------------------------------- */
@@ -242,7 +256,7 @@ b {
     color: #000000;
     position: absolute;
     margin-top: -25%;
-    margin-left: 42%;
+    margin-left: 40%;
     font-size: 70px;
 }
 
@@ -251,8 +265,8 @@ b1 {
     font-weight: bold;  
     color: #ffffff;
     position: absolute;
-    margin-top: -25%;
-    margin-left: 65%;
+    margin-top: -15%;
+    margin-left: 48%;
     font-size: 70px;
 }
 
@@ -440,4 +454,39 @@ button
 
 .diplayallhang {
     display: none;
+}
+
+/* ---> For the message YOU ALREADY USED THIS LETTER */
+
+b3
+{ 
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 570px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+img
+{   
+    width: 80px;
+    position: absolute;
+    margin-top: -400px;
+    margin-left: -65px;
+}
+
+.pistol
+{   
+    position: absolute;
+    margin-top: 320px;
+    margin-left: -80px;
+}
+
+.pistolcopie
+{   
+    position: absolute;
+    margin-top: 320px;
+    margin-left: -318px;
+    rotate: 180deg;
 }

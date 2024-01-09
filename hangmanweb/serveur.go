@@ -15,6 +15,7 @@ type HangmanData struct {
 	Letters   string
 	Life      int
 	Useletter []string
+	Message   string
 }
 
 func Home(w http.ResponseWriter, r *http.Request, data *HangmanData) {
@@ -39,6 +40,7 @@ func Serveur() {
 	http.HandleFunc("/endpage", func(w http.ResponseWriter, r *http.Request) { Exit(w, r, data) })
 	http.HandleFunc("/restart", func(w http.ResponseWriter, r *http.Request) { Restart(w, r, data) })
 	http.HandleFunc("/putletter", func(w http.ResponseWriter, r *http.Request) { PutLetter(w, r, data) })
+	http.HandleFunc("/win", func(w http.ResponseWriter, r *http.Request) { Win(w, r, data) })
 
 	fs := http.FileServer(http.Dir("./static/"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
@@ -64,6 +66,15 @@ func Exit(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	template.Execute(w, data)
 }
 
+func Win(w http.ResponseWriter, r *http.Request, data *HangmanData) {
+	template, err := template.ParseFiles("./winpage.html")
+	if err != nil {
+		log.Fatal(err)
+
+	}
+	template.Execute(w, data)
+}
+
 func Restart(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	data.Word = hangman.Randomly()
 	data.Display = hangman.Displaywords(data.Word)
@@ -75,6 +86,7 @@ func Restart(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	Letters := r.FormValue("letter")
 	data.Letters = Letters
+	data.Message = ""
 
 	if Letters == "" {
 		Inside(w, r, data)
@@ -98,6 +110,7 @@ func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 			}
 		}
 		if used {
+			data.Message = "🚧 You already used this letter 🚧"
 			http.Redirect(w, r, "/ingame", http.StatusSeeOther)
 			return
 		} else {
@@ -126,7 +139,7 @@ func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 		return
 	}
 	if data.Display == data.Word {
-		http.Redirect(w, r, "/endpage", http.StatusSeeOther)
+		http.Redirect(w, r, "/win", http.StatusSeeOther)
 		return
 	}
 	http.Redirect(w, r, "/ingame", http.StatusSeeOther)

@@ -14,7 +14,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                Menu
+                Home
             </a>
             <a href="/endpage">
                 <span></span>
@@ -32,6 +32,10 @@
             <b1>
                 {{.Life}}
             </b1>
+            <b3>
+                {{.Message}}
+            </b3>
+
             <form action="/putletter" method="post">
                 <input type="text" name="letter" maxlength="10" placeholder="Letter/Word here">
                 <button type="submit">Send</button>
@@ -40,7 +44,6 @@
             {{define "allhang"}}
             {{if eq .Life 10}}
         <div class="hang">
-            <!-- Étapes du pendu ici pour la vie 10 -->
             <div class="diplayallhang"></div>
         </div>
             {{else if eq .Life 9}}
