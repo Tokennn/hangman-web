@@ -1,6 +1,5 @@
 <p align="center">
   <img src="/static/okay.jpg"  width="200">
-  <img src="/static/kick-chair-hang-self.gif witdth="100">
 </p>
 
 # Project
