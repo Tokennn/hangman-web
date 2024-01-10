@@ -97,7 +97,7 @@ func Register(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 		r.ParseForm()
 
 		http.SetCookie(w, &http.Cookie{
-			Name:  "username :",
+			Name:  "username",
 			Value: data.Username,
 		})
 
