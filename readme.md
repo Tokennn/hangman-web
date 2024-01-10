@@ -16,22 +16,17 @@ Bienvenue dans le Projet Hangman-Web ! Ce projet vise à implémanter notre Hang
 
 1. **Clonez le dépôt :**
     ```bash
-    git clone https://github.com/votre-utilisateur/votre-projet.git
+    git clone https://github.com/Tokennn/hangman-web.git
     ```
 
 2. **Allez dans le répertoire du projet :**
     ```bash
-    cd votre-projet
+    cd "hangman-web"
     ```
 
-3. **Installez les dépendances :**
+3. **Démarrage du Jeu :**
     ```bash
     [commande d'installation des dépendances]
-    ```
-
-4. **Configurez le projet :**
-    ```bash
-    [instructions de configuration supplémentaires]
     ```
 
 ## 📖 Documentation
