@@ -19,19 +19,19 @@ These instructions will enable you to obtain a copy of the project (Hangman), on
     git clone https://github.com/Tokennn/hangman-web.git
     ```
 
-2. **Allez dans le répertoire du projet :**
+2. **Go to the project directory :**
     ```bash
     cd "hangman-web"
     ```
 
-3. **Démarrage du Jeu :**
+3. **Start the game :**
     ```bash
     go run main.go words.txt
     ```
 
 ## 📖 Documentation
 
-Pour obtenir plus d'informations sur l'utilisation du Projet Incroyable, consultez notre [documentation](lien-vers-la-doc).
+For more information on how to use Project Incredible, see our [documentation](lien-vers-la-doc).
 
 ## 🌐 Démo en Ligne
 
@@ -44,4 +44,4 @@ Pour toute question ou suggestion, n'hésitez pas à me contacter à [quentin.co
 
 ---
 
-**Remarque :** N'oubliez pas de personnaliser chaque section avec VOS détails spécifiques à votre projet. (Utilisez la syntaxe Markdown pour formater le texte selon vos préférences.)
+**Note :** N'oubliez pas de personnaliser chaque section avec VOS détails spécifiques à votre projet. (Utilisez la syntaxe Markdown pour formater le texte selon vos préférences.)

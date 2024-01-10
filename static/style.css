@@ -73,9 +73,9 @@ body
 /* --> For button RESTART */
 .buttoncontainerexit
 {
-    display: inline-block;
+    display: absolute;
     margin-top: 315px;
-    margin-left: 65px;
+    margin-left: 70px;
 }
 
 
@@ -451,6 +451,7 @@ button
     display: none;
 }
 
+
 /* ---> For the message YOU ALREADY USED THIS LETTER */
 
 b3
@@ -463,6 +464,19 @@ b3
     color: #ffffff;
 }
 
+/* --> For the message THE WORD WAS in endpage */
+
+b4
+{ 
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -265px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
 img
 {   
     width: 80px;
@@ -474,17 +488,19 @@ img
 .pistol
 {   
     position: absolute;
-    margin-top: 320px;
-    margin-left: -80px;
+    margin-top: -65px;
+    margin-left: 80px;
 }
 
 .pistolcopie
 {   
     position: absolute;
-    margin-top: 320px;
-    margin-left: -318px;
+    margin-top: -80px;
+    margin-left: -160px;
     rotate: 180deg;
 }
+
+/* --> For HOME logo */
 
 .logo
 {   
@@ -493,6 +509,8 @@ img
     margin-left: 585px;
     width: 18%;
 }
+
+/* --> For INGAME logo in winpage */
 
 .logo2
 {   
@@ -520,3 +538,39 @@ img
     width: 18%;
     margin-bottom: -220px;
 }
+
+.logo5
+{   
+    position: relative;
+    margin-top: -40px;
+    margin-left: 620px;
+    width: 3%;
+    margin-bottom: -270px;
+}
+
+.logo6
+{   
+    position: relative;
+    margin-top: -50px;
+    margin-left: 90px;
+    width: 3%;
+    margin-bottom: -270px;
+}
+
+.logo8
+{   
+    position: relative;
+    margin-top: 50px;
+    margin-left: 670px;
+    width: 3%;
+    margin-bottom: -250px;
+}
+
+.logo9
+{   
+    position: relative;
+    margin-top: 50px;
+    margin-left: -20px;
+    width: 3%;
+    margin-bottom: -250px;
+} 

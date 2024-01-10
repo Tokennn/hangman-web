@@ -16,6 +16,7 @@ type HangmanData struct {
 	Life      int
 	Useletter []string
 	Message   string
+	Message2  string
 }
 
 func Home(w http.ResponseWriter, r *http.Request, data *HangmanData) {
@@ -37,7 +38,7 @@ func Serveur() {
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) { Home(w, r, data) })
 	http.HandleFunc("/ingame", func(w http.ResponseWriter, r *http.Request) { Inside(w, r, data) })
-	http.HandleFunc("/endpage", func(w http.ResponseWriter, r *http.Request) { Exit(w, r, data) })
+	http.HandleFunc("/endpage", func(w http.ResponseWriter, r *http.Request) { Endpage(w, r, data) })
 	http.HandleFunc("/restart", func(w http.ResponseWriter, r *http.Request) { Restart(w, r, data) })
 	http.HandleFunc("/putletter", func(w http.ResponseWriter, r *http.Request) { PutLetter(w, r, data) })
 	http.HandleFunc("/win", func(w http.ResponseWriter, r *http.Request) { Win(w, r, data) })
@@ -57,11 +58,11 @@ func Inside(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	template.Execute(w, data)
 }
 
-func Exit(w http.ResponseWriter, r *http.Request, data *HangmanData) {
+func Endpage(w http.ResponseWriter, r *http.Request, data *HangmanData) {
+	data.Message2 = " The word was " + data.Word
 	template, err := template.ParseFiles("./endpage.html")
 	if err != nil {
 		log.Fatal(err)
-
 	}
 	template.Execute(w, data)
 }
@@ -79,8 +80,8 @@ func Restart(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	data.Word = hangman.Randomly()
 	data.Display = hangman.Displaywords(data.Word)
 	data.Life = 10
-
-	http.Redirect(w, r, "ingame", http.StatusSeeOther)
+	data.Useletter = []string{}
+	http.Redirect(w, r, "/ingame", http.StatusSeeOther)
 }
 
 func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {
