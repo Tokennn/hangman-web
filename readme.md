@@ -26,7 +26,7 @@ Bienvenue dans le Projet Hangman-Web ! Ce projet vise à implémanter notre Hang
 
 3. **Démarrage du Jeu :**
     ```bash
-    [commande d'installation des dépendances]
+    go run main.go words.txt
     ```
 
 ## 📖 Documentation
@@ -40,8 +40,8 @@ Consultez la démo en ligne du Projet Incroyable à l'adresse [lien-vers-la-demo
 
 ## 📧 Contact
 
-Pour toute question ou suggestion, n'hésitez pas à nous contacter à [quentin.contreau@ynov.com].
+Pour toute question ou suggestion, n'hésitez pas à me contacter à [quentin.contreau@ynov.com].
 
 ---
 
-**Remarque :** N'oubliez pas de personnaliser chaque section avec des détails spécifiques à votre projet. Utilisez la syntaxe Markdown pour formater le texte selon vos préférences.
+**Remarque :** N'oubliez pas de personnaliser chaque section avec VOS détails spécifiques à votre projet. (Utilisez la syntaxe Markdown pour formater le texte selon vos préférences.)
