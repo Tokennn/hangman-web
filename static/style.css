@@ -452,6 +452,7 @@ button
     display: none;
 }
 
+/* --------------------------------- */
 
 /* ---> For the message YOU ALREADY USED THIS LETTER */
 
@@ -516,6 +517,7 @@ b5
     color: #000000;
 }
 
+/* --> Text REGISTRATION */
 h1
 { 
     position: absolute;
@@ -526,6 +528,7 @@ h1
     color: #000000;
 }
 
+/* --> For the button REGISTER home */
 button
 { 
     position: absolute;
@@ -536,6 +539,7 @@ button
     color: #000000;
 }
 
+/* --> For the bra INPUT home */
 input
 { 
     position: absolute;

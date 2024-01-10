@@ -33,7 +33,6 @@ func Serveur() {
 
 	data := &HangmanData{}
 	data.Word = hangman.Randomly()
-	fmt.Println(data.Word)
 	data.Display = hangman.Displaywords(data.Word)
 	data.Life = 10
 
