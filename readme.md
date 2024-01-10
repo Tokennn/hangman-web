@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="votre-logo.png" alt="Logo du Projet" width="200">
+  <img src="/static/pict.png"  width="200">
 </p>
 
 # Project
