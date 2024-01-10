@@ -2,19 +2,19 @@
   <img src="votre-logo.png" alt="Logo du Projet" width="200">
 </p>
 
-# Projet Incroyable
+# Project
 
-Bienvenue dans le Projet Hangman-Web ! Ce projet vise à implémanter notre Hangman de base sur internet.
+These instructions will enable you to obtain a copy of the project (Hangman), on your local machine and send it to the Internet for development and testing purposes.
 
-## 🌟 Fonctionnalités
+## 🌟 Features
 
-- **Fonctionnalité 1 :** [Description de la fonctionnalité 1]
-- **Fonctionnalité 2 :** [Description de la fonctionnalité 2]
-- **Fonctionnalité 3 :** [Description de la fonctionnalité 3]
+- **Feature 1 :** [Have buttons with redirects to any page consistent with what the user wants]
+- **Feature 2 :** [Description de la fonctionnalité 2]
+- **Feature 3 :** [Description de la fonctionnalité 3]
 
 ## 🚀 Installation
 
-1. **Clonez le dépôt :**
+1. **Clone the repository :**
     ```bash
     git clone https://github.com/Tokennn/hangman-web.git
     ```
