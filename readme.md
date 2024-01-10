@@ -37,15 +37,15 @@ These instructions will enable you to obtain a copy of the project (Hangman), on
 
 For more information on how to use Project Incredible, see our [documentation](lien-vers-la-doc).
 
-## 🌐 Démo en Ligne
+## 🌐 Online demo 
 
 Consultez la démo en ligne du Projet Incroyable à l'adresse [lien-vers-la-demo](lien-vers-la-demo).
 
 
 ## 📧 Contact
 
-Pour toute question ou suggestion, n'hésitez pas à me contacter à [quentin.contreau@ynov.com].
+If you have any questions or suggestions, please don't hesitate to contact me at [quentin.contreau@ynov.com].
 
 ---
 
-**Note :** N'oubliez pas de personnaliser chaque section avec VOS détails spécifiques à votre projet. (Utilisez la syntaxe Markdown pour formater le texte selon vos préférences.)
+**Note :** Don't forget to personalize each section with YOUR project-specific details. (Use Markdown syntax to format the text according to your preferences).

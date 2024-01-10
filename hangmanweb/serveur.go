@@ -17,6 +17,7 @@ type HangmanData struct {
 	Useletter []string
 	Message   string
 	Message2  string
+	Username  string
 }
 
 func Home(w http.ResponseWriter, r *http.Request, data *HangmanData) {
@@ -42,6 +43,7 @@ func Serveur() {
 	http.HandleFunc("/restart", func(w http.ResponseWriter, r *http.Request) { Restart(w, r, data) })
 	http.HandleFunc("/putletter", func(w http.ResponseWriter, r *http.Request) { PutLetter(w, r, data) })
 	http.HandleFunc("/win", func(w http.ResponseWriter, r *http.Request) { Win(w, r, data) })
+	http.HandleFunc("/register", func(w http.ResponseWriter, r *http.Request) { Register(w, r, data) })
 
 	fs := http.FileServer(http.Dir("./static/"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
@@ -82,6 +84,25 @@ func Restart(w http.ResponseWriter, r *http.Request, data *HangmanData) {
 	data.Life = 10
 	data.Useletter = []string{}
 	http.Redirect(w, r, "/ingame", http.StatusSeeOther)
+}
+
+func Register(w http.ResponseWriter, r *http.Request, data *HangmanData) {
+	data.Username = r.FormValue("username")
+
+	if r.Method == "GET" {
+
+		http.ServeFile(w, r, "./static/register.html")
+
+	} else if r.Method == "POST" {
+		r.ParseForm()
+
+		http.SetCookie(w, &http.Cookie{
+			Name:  "username :",
+			Value: data.Username,
+		})
+
+		http.Redirect(w, r, "/ingame", http.StatusSeeOther)
+	}
 }
 
 func PutLetter(w http.ResponseWriter, r *http.Request, data *HangmanData) {

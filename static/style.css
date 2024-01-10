@@ -465,8 +465,8 @@ b3
     color: #ffffff;
 }
 
-/* --> For the message THE WORD WAS in endpage */
 
+/* --> For the message THE WORD WAS in endpage */
 b4
 { 
     position: absolute;
@@ -477,6 +477,77 @@ b4
     color: #ffffff;
 }
 
+b5
+{ 
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -265px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* --------------------------------------------- */
+
+.usernameendpage
+{ 
+    position: absolute;
+    margin-top: -222px;
+    margin-left: 480px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+.usernameingam { 
+    position: absolute;
+    margin-top: -327px;
+    margin-left: 275px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.usernamewinpage { 
+    position: absolute;
+    margin-top: -290px;
+    margin-left: 495px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+h1
+{ 
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 550px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+button
+{ 
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 780px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input
+{ 
+    position: absolute;
+    margin-top: -270px;
+    margin-left: 580px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+/* --------------------------------------------- */
 
 img
 {   
