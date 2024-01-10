@@ -4,7 +4,7 @@
 
 # Projet Incroyable
 
-Bienvenue dans le Projet Hangman-Web ! Ce projet vise à [expliquer brièvement l'objectif ou le but du projet].
+Bienvenue dans le Projet Hangman-Web ! Ce projet vise à implémanter notre Hangman de base sur internet.
 
 ## 🌟 Fonctionnalités
 
@@ -42,17 +42,10 @@ Pour obtenir plus d'informations sur l'utilisation du Projet Incroyable, consult
 
 Consultez la démo en ligne du Projet Incroyable à l'adresse [lien-vers-la-demo](lien-vers-la-demo).
 
-## 🤝 Contribuer
-
-Nous accueillons toutes les contributions ! Consultez notre [guide de contribution](CONTRIBUTING.md) pour commencer.
-
-## 📄 Licence
-
-Ce projet est sous licence [Nom de la Licence] - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
 
 ## 📧 Contact
 
-Pour toute question ou suggestion, n'hésitez pas à nous contacter à [votre-email@example.com].
+Pour toute question ou suggestion, n'hésitez pas à nous contacter à [quentin.contreau@ynov.com].
 
 ---
 
