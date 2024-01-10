@@ -9,8 +9,12 @@ These instructions will enable you to obtain a copy of the project (Hangman), on
 ## 🌟 Features
 
 - **Feature 1 :** [Have buttons with redirects to any page consistent with what the user wants]
-- **Feature 2 :** [Description de la fonctionnalité 2]
-- **Feature 3 :** [Description de la fonctionnalité 3]
+- **Feature 2 :** [Users can put any letters.. ]
+- **Feature 3 :** [If there is an error, the hangman start]
+- **Feature 4 :** [If the word is not find = redirection on the loose page with a button "RESTART" ]
+- **Feature 5 :** [If the user find the word = redirection on the win page with a button "YOU WIN" and other "HOME"]
+- **Feature 6 :** [The user can register hymself for a game]
+
 
 ## 🚀 Installation
 
