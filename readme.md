@@ -33,15 +33,6 @@ These instructions will enable you to obtain a copy of the project (Hangman), on
     go run main.go words.txt
     ```
 
-## 📖 Documentation
-
-For more information on how to use Project Incredible, see our [documentation](lien-vers-la-doc).
-
-## 🌐 Online demo 
-
-Consultez la démo en ligne du Projet Incroyable à l'adresse [lien-vers-la-demo](lien-vers-la-demo).
-
-
 ## 📧 Contact
 
 If you have any questions or suggestions, please don't hesitate to contact me at [quentin.contreau@ynov.com].
